@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+collision_list = [obj_wall, obj_wood_machine];
+
 function control()
 {
     movement();
@@ -12,20 +14,36 @@ function control()
     {
         kick();
     }
+	if (keyboard_check_pressed(horn_button))
+    {
+        horn();
+    }
 }
 
 function kick()
 {
-    var opposite_dir = dir+180;
     var thing = instance_place(
-        x + lengthdir_x(sprite_width/2, opposite_dir),
-        y + lengthdir_y(sprite_width/2, opposite_dir),
+        x + lengthdir_x(sprite_width, dir+180),
+        y + lengthdir_y(sprite_width, dir+180),
         obj_interactable
     );
-    
+	
     with (thing)
     {
-        move_x = lengthdir_x(other.kick_force, opposite_dir);
-        move_y = lengthdir_y(other.kick_force, opposite_dir);
+        kick(other.dir+180, other.kick_force);
+    }
+}
+
+function horn()
+{
+    var thing = instance_place(
+        x + lengthdir_x(sprite_width, dir),
+        y + lengthdir_y(sprite_width, dir),
+        obj_interactable
+    );
+	
+    with (thing)
+    {
+        horn();
     }
 }

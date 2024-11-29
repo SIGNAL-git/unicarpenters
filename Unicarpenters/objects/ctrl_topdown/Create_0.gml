@@ -20,7 +20,11 @@ function movement()
     // Normalize movement
     if (dir_x != 0 || dir_y != 0)
     {
-        if (abs(dir - point_direction(0, 0, dir_x, dir_y)) > 180)
+        if (dir - point_direction(0, 0, dir_x, dir_y) > 180)
+        {
+            dir = lerp(dir, 360+point_direction(0, 0, dir_x, dir_y), move_accel);
+        }
+		else if (dir - point_direction(0, 0, dir_x, dir_y) < -180)
         {
             dir = lerp(dir, -360+point_direction(0, 0, dir_x, dir_y), move_accel);
         }

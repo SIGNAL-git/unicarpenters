@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_interactable",
+  "%Name":"obj_wood_machine",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_interactable",
+  "name":"obj_wood_machine",
   "overriddenProperties":[],
   "parent":{
-    "name":"Generics",
-    "path":"folders/Objects/Generics.yy",
+    "name":"Things",
+    "path":"folders/Objects/Things.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interactable",
+    "path":"objects/obj_interactable/obj_interactable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,13 +29,15 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"move_speed","filters":[],"listItems":[],"multiselect":false,"name":"move_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"move_accel","filters":[],"listItems":[],"multiselect":false,"name":"move_accel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.05","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"item_limit","filters":[],"listItems":[],"multiselect":false,"name":"item_limit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_wood_machine",
+    "path":"sprites/spr_wood_machine/spr_wood_machine.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
