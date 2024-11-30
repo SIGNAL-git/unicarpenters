@@ -38,9 +38,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_unicorn",
-    "path":"sprites/spr_unicorn/spr_unicorn.yy",
+    "name":"spr_unicorn_idle",
+    "path":"sprites/spr_unicorn_idle/spr_unicorn_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_unicorn_idle",
+    "path":"sprites/spr_unicorn_idle/spr_unicorn_idle.yy",
+  },
   "visible":true,
 }

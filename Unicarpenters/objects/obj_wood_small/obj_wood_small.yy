@@ -6,8 +6,8 @@
   "name":"obj_wood_small",
   "overriddenProperties":[],
   "parent":{
-    "name":"Things",
-    "path":"folders/Objects/Things.yy",
+    "name":"Game Things",
+    "path":"folders/Objects/Game Things.yy",
   },
   "parentObjectId":{
     "name":"obj_item",

@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wood_machine",
+  "%Name":"obj_button_play",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_wood_machine",
+  "name":"obj_button_play",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game Things",
-    "path":"folders/Objects/Game Things.yy",
+    "name":"Title Things",
+    "path":"folders/Objects/Title Things.yy",
   },
   "parentObjectId":{
     "name":"obj_interactable",
@@ -28,9 +28,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"item_limit","filters":[],"listItems":[],"multiselect":false,"name":"item_limit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

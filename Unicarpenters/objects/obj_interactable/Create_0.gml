@@ -4,8 +4,6 @@
 // This is just a template
 // Override everything
 
-state = ITEM.IDLE;
-
 function control()
 {
     

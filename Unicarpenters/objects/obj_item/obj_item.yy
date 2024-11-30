@@ -9,8 +9,8 @@
   "name":"obj_item",
   "overriddenProperties":[],
   "parent":{
-    "name":"Things",
-    "path":"folders/Objects/Things.yy",
+    "name":"Generics",
+    "path":"folders/Objects/Generics.yy",
   },
   "parentObjectId":{
     "name":"obj_interactable",

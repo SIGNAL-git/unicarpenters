@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wood_machine",
+  "%Name":"obj_fastener",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_wood_machine",
+  "name":"obj_fastener",
   "overriddenProperties":[],
   "parent":{
     "name":"Game Things",
@@ -28,15 +28,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"item_limit","filters":[],"listItems":[],"multiselect":false,"name":"item_limit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wood_machine",
-    "path":"sprites/spr_wood_machine/spr_wood_machine.yy",
+    "name":"spr_blank",
+    "path":"sprites/spr_blank/spr_blank.yy",
   },
   "spriteMaskId":null,
   "visible":true,

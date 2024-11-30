@@ -6,3 +6,18 @@ enum ITEM
 	IDLE,
 	KICKED
 }
+
+enum BLUEPRINT
+{
+	FRESH,
+	BUILDING,
+	CONNECTING
+}
+
+enum PLAYER
+{
+	IDLE,
+	WALK,
+	KICK,
+	HORN
+}
