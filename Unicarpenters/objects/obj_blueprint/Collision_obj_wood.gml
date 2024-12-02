@@ -4,6 +4,7 @@ if (status.wood < blueprint.wood)
 {
 	instance_destroy(other);
 	status.wood += 1;
+	image_speed = 1;
 }
 else
 {
