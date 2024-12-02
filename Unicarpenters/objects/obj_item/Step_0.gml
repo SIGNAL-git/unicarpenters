@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 control();
+depth = -y
 
 move_and_collide(
     move_x,

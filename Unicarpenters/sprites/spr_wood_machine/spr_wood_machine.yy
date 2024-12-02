@@ -13,12 +13,17 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"23aa339f-5ca7-4173-8d1b-8d1d686ebb76","name":"23aa339f-5ca7-4173-8d1b-8d1d686ebb76","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"65a23da8-51e4-4518-a618-62414f922014","name":"65a23da8-51e4-4518-a618-62414f922014","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"5ea12ae9-3374-4f91-a4f1-6e5ab7a6596c","blendMode":0,"displayName":"Layer 4","isLocked":false,"name":"5ea12ae9-3374-4f91-a4f1-6e5ab7a6596c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"444a0a72-cdd9-43e9-a7a6-c71d2bb6da67","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"444a0a72-cdd9-43e9-a7a6-c71d2bb6da67","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7537de4e-7b58-4962-8291-6ca6ffe86a45","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"7537de4e-7b58-4962-8291-6ca6ffe86a45","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5b4f7853-9cfd-4606-b7f4-12ee86eb1009","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"5b4f7853-9cfd-4606-b7f4-12ee86eb1009","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"d50c4657-da20-4f1b-aabd-0976d617c3ba","blendMode":0,"displayName":"default","isLocked":false,"name":"d50c4657-da20-4f1b-aabd-0976d617c3ba","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_wood_machine",
@@ -49,7 +54,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -59,7 +64,7 @@
     },
     "name":"spr_wood_machine",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":2.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -71,6 +76,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23aa339f-5ca7-4173-8d1b-8d1d686ebb76","path":"sprites/spr_wood_machine/spr_wood_machine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"be42fc5a-85da-4d81-9f7d-e7c8dc214a95","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"65a23da8-51e4-4518-a618-62414f922014","path":"sprites/spr_wood_machine/spr_wood_machine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dfe88bd2-639c-49ee-9212-e0416fc07514","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -1,3 +1,5 @@
+event_inherited();
+
 state = BLUEPRINT.FRESH;
 
 blueprint =
@@ -52,6 +54,7 @@ function control()
 
 function fresh()
 {
+	image_speed = 0;
 	with (obj_fastener)
 	{
 		set_fastener(spr_blank);
@@ -71,6 +74,12 @@ function fresh()
 
 function building()
 {
+	if (image_index == 2)
+	{
+		image_speed = 0;
+		image_index = 0;
+	}
+	
 	if (status.wood >= blueprint.wood && status.wood_small >= blueprint.wood_small)
 	{
 		var fastener_list = array_shuffle(array_instances(obj_fastener));
@@ -100,7 +109,12 @@ function connecting()
 {
 	if (status.nails >= blueprint.nails && status.screws >= blueprint.screws)
 	{
-		state = BLUEPRINT.FRESH;
+		with (obj_fastener)
+		{
+			set_fastener(spr_blank);
+		}
+		state = noone;
+		image_speed = 1;
 	}
 }
 

@@ -21,3 +21,11 @@ enum PLAYER
 	KICK,
 	HORN
 }
+
+enum DIR
+{
+	NORTH,
+	SOUTH,
+	EAST,
+	WEST
+}

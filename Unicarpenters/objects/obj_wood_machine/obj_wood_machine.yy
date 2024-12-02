@@ -3,6 +3,7 @@
   "%Name":"obj_wood_machine",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_wood_machine",
@@ -12,8 +13,8 @@
     "path":"folders/Objects/Game Things.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
+    "name":"obj_machine",
+    "path":"objects/obj_machine/obj_machine.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

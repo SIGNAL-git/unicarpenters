@@ -12,8 +12,8 @@
     "path":"folders/Objects/Title Things.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
+    "name":"obj_machine",
+    "path":"objects/obj_machine/obj_machine.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
