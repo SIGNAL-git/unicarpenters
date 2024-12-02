@@ -56,6 +56,7 @@ function idle()
 
 function walk()
 {
+	move_accel = 0.2;
 	var dir_x = keyboard_check(right_button) - keyboard_check(left_button);
     var dir_y = keyboard_check(down_button) - keyboard_check(up_button);
     
@@ -82,53 +83,97 @@ function walk()
     }
 }
 
+kick_charge = 0;
 function kick()
 {
+	if (keyboard_check(kick_button) && kick_charge < kick_force)
+    {
+		image_speed = 0;
+        kick_charge++;
+    }
 	move_x = 0;
 	move_y = 0;
-	
-	if (image_index == image_number - 1)
-	{
-		var thing = instance_place(
-		        x,
-		        y,
-		        obj_item
-			);
-		
-		// This is terrible, learn how to make a proper system later
-		if (thing == noone)
+	if (!keyboard_check(kick_button))
+    {
+		image_speed = 1;
+        if (image_index == image_number - 1)
 		{
-			thing = instance_place(
-		        x + lengthdir_x(width, dir+180),
-		        y + lengthdir_y(width, dir+180),
-		        obj_item
-		    );
-		}
-		if (thing == noone)
-		{
-			thing = instance_place(
-		        x,
-		        y,
-		        obj_interactable
-			);
+			var thing = instance_place(
+			        x,
+			        y,
+			        obj_item
+				);
 		
+			// This is terrible, learn how to make a proper system later
+			// you know what's worse? a lack of comments
+			// comment later
 			if (thing == noone)
 			{
 				thing = instance_place(
 			        x + lengthdir_x(width, dir+180),
 			        y + lengthdir_y(width, dir+180),
-			        obj_interactable
+			        obj_item
 			    );
-			}
-		}
-	
-	    with (thing)
-	    {
-	        kick(other.dir+180, other.kick_force);
-	    }
+			
+				if (thing == noone)
+				{
+					thing = instance_place(
+				        x,
+				        y,
+				        obj_interactable
+					);
 		
-		state = noone;
-	}
+					if (thing == noone)
+					{
+						thing = instance_place(
+					        x + lengthdir_x(width, dir+180),
+					        y + lengthdir_y(width, dir+180),
+					        obj_interactable
+					    );
+					}
+				}
+			}
+	
+		    with (thing)
+		    {
+		        kick(other.dir+180, other.kick_charge);
+		    }
+		
+			// I just think this would be really funny
+			if (thing == noone)
+			{
+				thing = instance_place(
+					x,
+					y,
+					obj_player
+				);
+		
+				if (thing == noone)
+				{
+					thing = instance_place(
+						x + lengthdir_x(width, dir+180),
+						y + lengthdir_y(width, dir+180),
+						obj_player
+					);
+				}
+			
+				with (thing)
+			    {
+			        kicker(other.dir+180, other.kick_charge);
+			    }
+			}
+			kick_charge = 0;
+			state = noone;
+		}
+    }
+	
+}
+
+function kicker(dir, kick_force)
+{
+	move_x = lengthdir_x(kick_force, dir);
+	move_y = lengthdir_y(kick_force, dir);
+	move_accel = 0.05;
 }
 
 function horn()
@@ -163,8 +208,8 @@ function horn()
 			if (thing == noone)
 			{
 				thing = instance_place(
-			        x + lengthdir_x(width, dir+180),
-			        y + lengthdir_y(width, dir+180),
+			        x + lengthdir_x(width, dir),
+			        y + lengthdir_y(width, dir),
 			        obj_interactable
 			    );
 			}

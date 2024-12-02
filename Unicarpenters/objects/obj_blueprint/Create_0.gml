@@ -1,6 +1,7 @@
 event_inherited();
 
 state = BLUEPRINT.FRESH;
+randomize();
 
 blueprint =
 {
@@ -32,7 +33,14 @@ table = {
 	nails: 4
 }
 
-furniture_list = [chair, table];
+wall = {
+	wood: 6,
+	wood_small: 0,
+	screws: 0,
+	nails: 6
+}
+
+furniture_list = [chair, table, wall];
 
 function control()
 {
@@ -69,15 +77,34 @@ function fresh()
 	
 	blueprint = random_furniture();
 	
+	with (obj_display_wood)
+	{
+		image_index = other.blueprint.wood - other.status.wood;
+	}
+	with (obj_display_wood_small)
+	{
+		image_index = other.blueprint.wood_small - other.status.wood_small;
+	}
+	
 	state = BLUEPRINT.BUILDING;
 }
 
 function building()
 {
-	if (image_index == 2)
+	if (image_index == 3)
 	{
 		image_speed = 0;
-		image_index = 0;
+		image_index = 1;
+		with (obj_display_wood)
+		{
+			image_index = other.blueprint.wood - other.status.wood;
+			y = ystart;
+		}
+		with (obj_display_wood_small)
+		{
+			image_index = other.blueprint.wood_small - other.status.wood_small;
+			y = ystart;
+		}
 	}
 	
 	if (status.wood >= blueprint.wood && status.wood_small >= blueprint.wood_small)
@@ -101,6 +128,19 @@ function building()
 			}
 		}
 		
+		with (obj_display_wood)
+		{
+			image_index = other.blueprint.wood - other.status.wood;
+			y -= 8;
+		}
+		with (obj_display_wood_small)
+		{
+			image_index = other.blueprint.wood_small - other.status.wood_small;
+			y -= 8;
+		}
+		
+		image_speed = 0;
+		image_index = 0;
 		state = BLUEPRINT.CONNECTING;
 	}
 }

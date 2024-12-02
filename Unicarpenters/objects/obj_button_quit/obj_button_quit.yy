@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"obj_button_quit",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_button_quit",
@@ -12,8 +12,8 @@
     "path":"folders/Objects/Title Things.yy",
   },
   "parentObjectId":{
-    "name":"obj_machine",
-    "path":"objects/obj_machine/obj_machine.yy",
+    "name":"obj_button",
+    "path":"objects/obj_button/obj_button.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wood_machine",
-    "path":"sprites/spr_wood_machine/spr_wood_machine.yy",
+    "name":"spr_button",
+    "path":"sprites/spr_button/spr_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,
