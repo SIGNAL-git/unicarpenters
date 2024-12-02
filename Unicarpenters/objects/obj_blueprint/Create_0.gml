@@ -2,6 +2,7 @@ event_inherited();
 
 state = BLUEPRINT.FRESH;
 randomize();
+completions = 0;
 
 blueprint =
 {

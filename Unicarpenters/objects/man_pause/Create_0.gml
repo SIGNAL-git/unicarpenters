@@ -5,5 +5,6 @@
 depth = -1000;
 
 paused = false;
-mouse_was_locked = false;
 screen = -1;
+ending = false;
+points = 0;

@@ -3,3 +3,4 @@
 
 image_index = 1;
 state = BLUEPRINT.FRESH;
+completions += 1;
